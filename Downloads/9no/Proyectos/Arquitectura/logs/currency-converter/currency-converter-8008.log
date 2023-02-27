@@ -1,0 +1,198 @@
+2023-02-27 14:40:13.864-0400 [main]  INFO 81865 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 81865 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:40:13.933-0400 [main]  INFO 81865 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:40:27.377-0400 [main]  INFO 81865 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:40:27.589-0400 [main]  INFO 81865 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 45 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:40:29.917-0400 [main]  INFO 81865 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:40:29.954-0400 [main]  INFO 81865 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:40:29.956-0400 [main]  INFO 81865 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:40:30.335-0400 [main]  INFO 81865 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:40:30.336-0400 [main]  INFO 81865 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 14533 ms
+2023-02-27 14:40:30.789-0400 [main]  WARN 81865 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:40:30.797-0400 [main]  INFO 81865 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:40:30.859-0400 [main]  INFO 81865 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:40:30.924-0400 [main] ERROR 81865 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-27 14:41:30.657-0400 [main]  INFO 83144 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 83144 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:41:30.664-0400 [main]  INFO 83144 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:41:33.267-0400 [main]  INFO 83144 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:41:33.324-0400 [main]  INFO 83144 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:41:35.071-0400 [main]  INFO 83144 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:41:35.102-0400 [main]  INFO 83144 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:41:35.104-0400 [main]  INFO 83144 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:41:35.452-0400 [main]  INFO 83144 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:41:35.454-0400 [main]  INFO 83144 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4571 ms
+2023-02-27 14:41:35.759-0400 [main]  WARN 83144 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:41:35.767-0400 [main]  INFO 83144 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:41:35.833-0400 [main]  INFO 83144 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:41:35.924-0400 [main] ERROR 83144 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-27 14:43:42.943-0400 [main]  INFO 85120 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 85120 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:43:42.953-0400 [main]  INFO 85120 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:43:45.435-0400 [main]  INFO 85120 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:43:45.538-0400 [main]  INFO 85120 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:43:47.414-0400 [main]  INFO 85120 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:43:47.439-0400 [main]  INFO 85120 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:43:47.440-0400 [main]  INFO 85120 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:43:47.664-0400 [main]  INFO 85120 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:43:47.665-0400 [main]  INFO 85120 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4496 ms
+2023-02-27 14:43:47.904-0400 [main]  WARN 85120 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:43:47.913-0400 [main]  INFO 85120 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:43:47.978-0400 [main]  INFO 85120 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:43:48.046-0400 [main] ERROR 85120 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-27 14:47:04.943-0400 [main]  INFO 88283 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 88283 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:47:04.956-0400 [main]  INFO 88283 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:47:08.093-0400 [main]  INFO 88283 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:47:08.167-0400 [main]  INFO 88283 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 36 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:47:10.056-0400 [main]  INFO 88283 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:47:10.091-0400 [main]  INFO 88283 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:47:10.094-0400 [main]  INFO 88283 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:47:10.412-0400 [main]  INFO 88283 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:47:10.414-0400 [main]  INFO 88283 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 5200 ms
+2023-02-27 14:47:10.878-0400 [main]  WARN 88283 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:47:10.886-0400 [main]  INFO 88283 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:47:10.946-0400 [main]  INFO 88283 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:47:11.009-0400 [main] ERROR 88283 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-27 14:48:23.526-0400 [main]  INFO 89449 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 89449 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:48:23.536-0400 [main]  INFO 89449 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:48:25.921-0400 [main]  INFO 89449 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:48:25.984-0400 [main]  INFO 89449 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:48:28.007-0400 [main]  INFO 89449 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:48:28.035-0400 [main]  INFO 89449 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:48:28.036-0400 [main]  INFO 89449 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:48:28.288-0400 [main]  INFO 89449 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:48:28.289-0400 [main]  INFO 89449 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4545 ms
+2023-02-27 14:48:28.588-0400 [main]  WARN 89449 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:48:28.598-0400 [main]  INFO 89449 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:48:28.660-0400 [main]  INFO 89449 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:48:28.732-0400 [main] ERROR 89449 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2023-02-27 14:50:11.371-0400 [main]  INFO 91037 --- [a.software.demo.DemoApplicationKt       ] : Starting DemoApplicationKt using Java 11.0.17 on aper117-Lenovo-Y40-70 with PID 91037 (/home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main/target/classes started by aper117 in /home/aper117/Downloads/9no/Proyectos/Arquitectura/currency-converter-main)
+2023-02-27 14:50:11.380-0400 [main]  INFO 91037 --- [a.software.demo.DemoApplicationKt       ] : No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:50:13.929-0400 [main]  INFO 91037 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:50:13.999-0400 [main]  INFO 91037 --- [.s.d.r.c.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
+2023-02-27 14:50:15.947-0400 [main]  INFO 91037 --- [o.s.b.w.embedded.tomcat.TomcatWebServer ] : Tomcat initialized with port(s): 8008 (http)
+2023-02-27 14:50:15.972-0400 [main]  INFO 91037 --- [o.apache.catalina.core.StandardService  ] : Starting service [Tomcat]
+2023-02-27 14:50:15.973-0400 [main]  INFO 91037 --- [org.apache.catalina.core.StandardEngine ] : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:50:16.246-0400 [main]  INFO 91037 --- [o.a.c.c.C.[Tomcat].[localhost].[/]      ] : Initializing Spring embedded WebApplicationContext
+2023-02-27 14:50:16.248-0400 [main]  INFO 91037 --- [w.s.c.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 4561 ms
+2023-02-27 14:50:16.589-0400 [main]  WARN 91037 --- [ConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2023-02-27 14:50:16.599-0400 [main]  INFO 91037 --- [o.apache.catalina.core.StandardService  ] : Stopping service [Tomcat]
+2023-02-27 14:50:16.670-0400 [main]  INFO 91037 --- [ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-27 14:50:16.759-0400 [main] ERROR 91037 --- [o.s.b.d.LoggingFailureAnalysisReporter  ] : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
