@@ -4,7 +4,7 @@ import arquitectura.software.demo.exception.ServiceException
 import arquitectura.software.demo.dto.ErrorServiceDto
 import arquitectura.software.demo.dto.ResponseServiceDto
 import arquitectura.software.demo.dao.Currency
-import arquitectura.software.demo.CurrencyRepository.CurrencyRepository
+import arquitectura.software.demo.dao.repository.CurrencyRepository
 import org.springframework.beans.factory.annotation.Autowired
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -25,7 +25,7 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
     companion object {
         val objectMapper = jacksonObjectMapper()
         val LOGGER: Logger = LoggerFactory.getLogger(CurrencyBl::class.java)
-    }
+    }           
 
     @Value("\${api.url}")
     lateinit var apiUrl: String
@@ -45,9 +45,8 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
         currency.currencyFrom = from
         currency.currencyTo = to
         currency.amount = amount
-        currency.result = responseServiceDto.result!!
         currency.date = Date()
-        
+        currency.result = responseServiceDto.result
         currencyRepository.save(currency)
 
         return responseServiceDto

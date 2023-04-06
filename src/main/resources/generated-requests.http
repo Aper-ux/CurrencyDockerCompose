@@ -1,0 +1,2 @@
+###
+GET http://172.17.0.1:8008/api/currency/exchange?to=usd&from=eur&amount=100
