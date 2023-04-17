@@ -79,4 +79,10 @@ class CurrencyBl @Autowired constructor(private val currencyRepository: Currency
         val errorService = objectMapper.readValue<ErrorServiceDto>(body)
         throw ServiceException("Code: ${errorService.error.code}, message: ${errorService.error.message}")
     }
+
+    fun getConvertions(page:Int, size:Int): PageImpl<Currency> {
+        LOGGER.info("Obteniendo historial de conversiones")
+        val currencies : Page<Currency> = currencyRepository.findAll(PageRequest.of(page, size))
+        return PageImpl(currencies.toList(), currencies.pageable, currencies.totalElements)
+    }
 }

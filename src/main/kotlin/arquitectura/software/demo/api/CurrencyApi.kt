@@ -29,4 +29,11 @@ class CurrencyApi @Autowired constructor(private val currencyBl: CurrencyBl) {
         return result
     }
 
+    @GetMapping("/list")
+    fun getConvertions(
+        @RequestParam page: Int,
+        @RequestParam size: Int) : ResponseEntity<PageImpl<Currency>> {
+        val convertions = currencyBl.getConvertions(page, size);
+        return ResponseEntity.ok(convertions)
+    }
 }

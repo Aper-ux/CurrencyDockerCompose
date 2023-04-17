@@ -6,7 +6,7 @@
     <springProperty scope="context" name="port" source="server.port" defaultValue="0000"/>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>Downloads/9no/Proyectos/Arquitectura/logs/${application}/${application}-${port}.log</file>
+        <file>/opt/arquitectura/logs/${application}/${application}-${port}.log</file>
         <append>true</append>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rollover -->

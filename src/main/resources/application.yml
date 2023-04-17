@@ -1,11 +1,18 @@
 api:
-  key: IIoQmQdG2JPE4C7Ato3tjPhLHBMeKlWe
-  url: "https://api.apilayer.com/exchangerates_data/convert"
+  key: ${API_KEY:4P0xIsuOQIRoGEQBvs0ZJJyEuxpYi38G}
+  url: ${API_URL:https://api.apilayer.com/exchangerates_data/convert}
 
 server:
   port: 8008
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    base-url: http://localhost:9411/
   datasource:
     type: org.postgresql.jdbc2.optional.SimpleDataSource
     username: ${USERNAME:postgres}
@@ -14,5 +21,30 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-  aplication:
+  application:
     name: currency-converter
+
+keycloak:
+  auth-server-url: http://localhost:9090
+  autodetect-bearer-only: true
+  credentials:
+    secret: dH8SLOVQIus1f703zsbsRLBbGLY9crlk
+  realm: software
+  resource: backend
+  ssl-required: external
+  use-resource-role-mappings: false
+  security-constraints:
+    - auth-roles:
+        - ADMIN
+      security-collections:
+        - name: SERVICIOS DEL ADMINISTRADOR
+          methods:
+            - GET
+          patterns:
+            - /api/currency/*
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
